@@ -1,25 +1,51 @@
-import logo from './logo.svg';
+import { useState } from "react"
 import './App.css';
 
-function App() {
+function InputWithButton(props) {
+  const [inputValue, setInputValue] = useState("");
+
+  const InputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const ButtonClick = () => {
+    props.onSubmit(inputValue);
+    setInputValue("");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="btn-1">
+      <input type="text" value={inputValue} onChange={InputChange} />
+      <button onClick={ButtonClick}>추가하기</button>
     </div>
   );
 }
 
-export default App;
+function List() {
+  return (
+    <div className="title">
+      <h3>My ToDo List</h3>
+      <p>React</p>
+    </div>
+  );
+}
+
+export default function App() {
+  const [items, setItems] = useState([]);
+
+  const handleAddItem = (newItem) => {
+    setItems([...items, newItem]);
+  };
+
+  return (
+    <div className="App">
+      <List />
+      <InputWithButton onSubmit={handleAddItem} />
+      <ul>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
