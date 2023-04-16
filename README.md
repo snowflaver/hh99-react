@@ -43,3 +43,32 @@ document.querySelector(‘#title”).style.color = “red”;
 
 <!-- 이해를 돕는 사진 삽입 -->
 
+#### 프롭(props)이란?
+React에서 props는 부모 컴포넌트에서 자식 컴포넌트로 데이터를 전달하는 데 사용됩니다. 즉, 부모 컴포넌트에서 자식 컴포넌트로 전달되는 데이터입니다.
+
+props는 읽기 전용이며, 자식 컴포넌트에서 변경할 수 없습니다. 따라서, 부모 컴포넌트에서 자식 컴포넌트로 전달된 props는 자식 컴포넌트에서 변경할 수 없습니다. 이러한 props의 특성은 React에서 데이터의 일관성과 안정성을 보장합니다.
+
+예를 들어, 부모 컴포넌트에서 자식 컴포넌트로 이름과 나이를 전달하려고 할 때, 다음과 같이 코드를 작성할 수 있습니다.
+```
+javascript
+Copy code
+// 부모 컴포넌트
+function Parent() {
+  return (
+    <Child name="자식" age={1} />
+  );
+}
+
+// 자식 컴포넌트
+function Child(props) {
+  return (
+    <div>
+      <p>Name: {props.name}</p>
+      <p>Age: {props.age}</p>
+    </div>
+  );
+}
+```
+위 코드에서, Parent 컴포넌트에서 Child 컴포넌트로 name과 age를 props로 전달하고 있습니다. Child 컴포넌트에서는 전달받은 props를 이용하여 이름과 나이를 화면에 출력합니다.
+
+즉, props는 React에서 컴포넌트 간에 데이터를 전달하는데 사용되며, 부모 컴포넌트에서 자식 컴포넌트로 읽기 전용으로 전달됩니다.
