@@ -14,10 +14,15 @@ function InputWithButton(props) {
   };
 
   return (
-    <div className="btn-1">
-      <input type="text" value={inputValue} onChange={InputChange} />
-      <button onClick={ButtonClick}>추가하기</button>
-    </div>
+    <>
+      <div className="btn-1">
+        <h4>
+          제목<input type="text" value={inputValue} onChange={InputChange} />내용<input type='text' onChange={InputChange} />
+        </h4>
+        <button onClick={ButtonClick}>추가하기</button>
+      </div>
+
+    </>
   );
 }
 
