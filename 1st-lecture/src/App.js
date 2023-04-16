@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <>
+    <div>
+      <input type='text' />
     </div>
-  );
+
+    <p>hello world</p>
+  </> // 태그를 여러개 사용할땐 무조건 최상위 태그 하나로두고 그안에 코드를 짜야한다.
+  )
 }
 
-export default App;
+export default App
