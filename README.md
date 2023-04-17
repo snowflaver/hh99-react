@@ -41,8 +41,6 @@ document.querySelector(‘#title”).style.color = “red”;
 가상 DOM을 사용하면 React는 높은 효율성과 유지보수성을 제공하면서도 사용자가 변경한 요소만 업데이트할 수 있습니다.
 이는 React를 사용하여 웹 애플리케이션을 구축하는데 있어서 가장 큰 장점 중 하나입니다.
 
-<!-- 이해를 돕는 사진 삽입 -->
-
 #### 프롭(props)이란?
 React에서 props는 부모 컴포넌트에서 자식 컴포넌트로 데이터를 전달하는 데 사용된다.
 즉, 부모 컴포넌트에서 자식 컴포넌트로 전달되는 데이터입니다.
@@ -83,13 +81,13 @@ React에서 state는 컴포넌트 내부에서 변경 가능한 데이터를 저
 ```
 // Counter 컴포넌트
 class Counter extends React.Component {
-  // 생성자 함수에서 초기값으로 count를 0으로 설정합니다.
+  // 생성자 함수에서 초기값으로 count를 0으로 설정
   constructor(props) {
     super(props);
     this.state = { count: 0 };
   }
 
-  // render 메소드에서는 현재 count 값을 출력하고, 클릭 이벤트가 발생할 때마다 count 값을 1 증가시키고 state를 변경합니다.
+  // render 메소드에서는 현재 count 값을 출력하고, 클릭 이벤트가 발생할 때마다 count 값을 1 증가시키고 state를 변경
   render() {
     return (
       <div>
