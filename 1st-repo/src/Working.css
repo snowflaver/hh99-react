@@ -1,0 +1,32 @@
+.worklist, #donelist {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .worklist li, #donelist li {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .worklist h3, #donelist h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .worklist p, #donelist p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  
+  .worklist button, #donelist button {
+    background-color: #007bff;
+    color: #FFF;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
