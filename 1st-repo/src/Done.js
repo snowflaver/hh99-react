@@ -10,9 +10,9 @@ function Done({ items, handleDeleteItem, handleItemUndone }) {
           <li key={index}>
             <h4>{item.title}</h4>
             <p>{item.content}</p>
-            <div>
-              <button onClick={() => handleDeleteItem(index)}>삭제</button>
-              <button onClick={() => handleItemUndone(index)}>취소</button>
+            <div className='버튼들'>
+              <button id='삭제' onClick={() => handleDeleteItem(index)}>삭제하기</button>
+              <button id='취소' onClick={() => handleItemUndone(index)}>취소</button>
             </div>
           </li>
         ))}

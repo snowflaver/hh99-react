@@ -10,9 +10,9 @@ function Working({ items, handleDeleteItem, handleItemDone }) {
           <li key={index}>
             <h4>{item.title}</h4>
             <p>{item.content}</p>
-            <div>
-              <button onClick={() => handleDeleteItem(index)}>삭제하기</button>
-              <button onClick={() => handleItemDone(index)}>완료</button>
+            <div className='버튼들'> 
+              <button className='button' id='삭제' onClick={() => handleDeleteItem(index)}>삭제하기</button>
+              <button className='button' id='완료' onClick={() => handleItemDone(index)}>완료</button>
             </div>
           </li>
         ))}

@@ -1,22 +1,48 @@
-.listappand {
-    background-color: #F2F2F2;
-    border: 1px solid #DDD;
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
-  .listappand > div {
-    margin-bottom: 10px;
-  }
-  
-  .listappand input[type="text"], .listappand button {
-    margin-right: 10px;
-  }
-  
-  .listappand button {
-    background-color: #007bff;
-    color: #FFF;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
+.appand {
+  font-size: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  background-color: rgb(185, 238, 255);
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.appand input[type="text"] {
+  width: 300px;
+  height: 25px;
+
+  margin-right: 10px;
+  padding: 10px;
+
+  border: none;
+  border-radius: 14px;
+  box-shadow: none;
+
+  font-size: 16px;
+}
+
+.appand button {
+  padding: 10px;
+
+  border: none;
+  border-radius: 13px;
+
+  box-shadow: none;
+
+  background-color: rgb(255, 195, 255);
+  color: cornflowerblue;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.appand button:hover {
+  border: 2px solid white;
+}
