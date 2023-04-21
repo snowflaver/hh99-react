@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+# 리액트 숙련 주차
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Styled Components (개요)
+컴포넌트를 스타일링 핧 수 있는 방법중 하나이며 이를 이해하기위해선'Css-in-JS'라는 방식을 알아야 된다.
+이 방법은 보다 간편한 방법으로 컴포넌트를 꾸밀 수 있는 방법
+```
+Css-in-JS는 자바스크립트로 코드를 작성하는 것
+// JScode > CSScode
+// 컴포넌트를 꾸미는 방식
+// 즉, 자바스크립트를 사용해서 css를 만드는 것
+// 따라서 패키지 Styled Components가 필요하다
+```
+우리가 리액트에서 Css-in-JS방식으로 컴포넌트를 꾸밀 수있게 도와주는것이 Styled Components이다.
+이 외에도 많은 패키지들이 잇지만 이 Styled Components 패키지만큼 꾸준하게 많은 사용을 한 패키지가 없다.
+스타일을 꾸미는 패키지는 대표적으로 emotion, Styled-Components, wailwind css가 잇다.
+npm 트렌드를 보면 Styled Components가 꾸준히 사용되고 있는것이 보인다.
+참고 URL = 'https://npmtrends.com/emotion-vs-styled-components-vs-tailwindcss'
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
